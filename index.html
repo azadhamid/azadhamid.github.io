@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hamid Azad | AI + Signal Processing for UAV Systems</title>
+  <meta name="description" content="Research portfolio of Hamid Azad: UAV perception, monocular localization, radar-camera fusion, simulation, and domain adaptation." />
+  <meta property="og:title" content="Hamid Azad | UAV AI, Perception, and Sensor Fusion" />
+  <meta property="og:description" content="Visual research portfolio with UAV localization, radar-camera fusion, payload detection, and simulation demos." />
+  <meta property="og:image" content="assets/images/social-preview.svg" />
+  <link rel="preload" href="assets/videos/uav-localization.mp4" as="video" type="video/mp4">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Home">HA</a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#videos">Videos</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-pad">
+      <div class="hero-copy">
+        <p class="eyebrow">AI • Signal Processing • UAV Systems</p>
+        <h1>Visual research demos for autonomous UAV perception and localization.</h1>
+        <p class="lead">
+          I work at the intersection of deep learning, radar/vision sensing, simulation, and multi-modal tracking for drone applications.
+          This page highlights selected projects using short visual demos and reproducible research summaries.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#videos">Watch demos</a>
+          <a class="button ghost" href="https://github.com/azadhamid" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+      <div class="hero-reel" aria-label="Featured visualizations">
+        <article class="reel-card large">
+          <video autoplay muted loop playsinline preload="metadata" src="assets/videos/uav-localization.mp4"></video>
+          <span>Monocular localization</span>
+        </article>
+        <article class="reel-card">
+          <video autoplay muted loop playsinline preload="metadata" src="assets/videos/radar-camera-fusion.mp4"></video>
+          <span>Radar-camera fusion</span>
+        </article>
+        <article class="reel-card">
+          <video autoplay muted loop playsinline preload="metadata" src="assets/videos/payload-domain-adaptation.mp4"></video>
+          <span>Domain adaptation</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="stats-strip" aria-label="Research areas">
+      <div><strong>UAV</strong><span>Perception</span></div>
+      <div><strong>3D</strong><span>Localization</span></div>
+      <div><strong>Radar + Vision</strong><span>Sensor Fusion</span></div>
+      <div><strong>Simulation</strong><span>Monte Carlo Testing</span></div>
+    </section>
+
+    <section id="projects" class="section-pad">
+      <div class="section-heading">
+        <p class="eyebrow">Selected work</p>
+        <h2>Research projects</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Transformer-based monocular UAV localization</h3>
+          <p>Temporal transformer model for estimating relative 3D UAV position from cropped monocular image sequences and bounding-box features.</p>
+          <ul>
+            <li>Temporal attention over image sequences</li>
+            <li>Uncertainty-aware prediction head</li>
+            <li>Trajectory and RMSE visualization</li>
+          </ul>
+        </article>
+        <article class="project-card">
+          <h3>Payload detection with domain adaptation</h3>
+          <p>Synthetic-to-real visual adaptation pipeline for drone payload classification using CycleGAN/CUT-style translation and CNN/ViT classifiers.</p>
+          <ul>
+            <li>Real/synthetic visual domain alignment</li>
+            <li>Attention map visualization</li>
+            <li>Classifier comparison experiments</li>
+          </ul>
+        </article>
+        <article class="project-card">
+          <h3>Radar-camera fusion and tracking</h3>
+          <p>Analysis pipeline for synchronizing radar range estimates, GPS logs, bounding-box vision angles, and ground-truth trajectories.</p>
+          <ul>
+            <li>Range, azimuth, elevation analysis</li>
+            <li>Radar + vision comparison plots</li>
+            <li>Flight log synchronization</li>
+          </ul>
+        </article>
+        <article class="project-card">
+          <h3>Monte Carlo simulation platform</h3>
+          <p>MATLAB/Simulink-based scenario sweeps for evaluating UAV detection, tracking robustness, weather conditions, and sensor settings.</p>
+          <ul>
+            <li>Scenario batch execution</li>
+            <li>Tracking performance metrics</li>
+            <li>Weather and sensor parameter sweeps</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="videos" class="section-pad video-section">
+      <div class="section-heading">
+        <p class="eyebrow">Visual gallery</p>
+        <h2>Eye-catching video visualizations</h2>
+        <p>Replace the demo clips below with your final exported MP4s when they are ready. Keep them short, muted, and loopable.</p>
+      </div>
+      <div class="video-grid">
+        <article class="video-card">
+          <video controls muted loop playsinline preload="metadata" poster="assets/images/social-preview.svg" src="assets/videos/uav-localization.mp4"></video>
+          <h3>Monocular UAV localization</h3>
+          <p>Ground-truth vs predicted UAV trajectory with live error indicators.</p>
+        </article>
+        <article class="video-card">
+          <video controls muted loop playsinline preload="metadata" poster="assets/images/social-preview.svg" src="assets/videos/radar-camera-fusion.mp4"></video>
+          <h3>Radar-camera fusion</h3>
+          <p>Visual explanation of sensor alignment and fused target state estimation.</p>
+        </article>
+        <article class="video-card">
+          <video controls muted loop playsinline preload="metadata" poster="assets/images/social-preview.svg" src="assets/videos/payload-domain-adaptation.mp4"></video>
+          <h3>Payload detection</h3>
+          <p>Domain adaptation and attention visualization for carried-payload classification.</p>
+        </article>
+        <article class="video-card">
+          <video controls muted loop playsinline preload="metadata" poster="assets/images/social-preview.svg" src="assets/videos/monte-carlo-dashboard.mp4"></video>
+          <h3>Monte Carlo simulation</h3>
+          <p>Scenario-level performance sweep with detection and tracking metrics.</p>
+        </article>
+        <article class="video-card">
+          <video controls muted loop playsinline preload="metadata" poster="assets/images/social-preview.svg" src="assets/videos/synthetic-simulation.mp4"></video>
+          <h3>Synthetic scenario generation</h3>
+          <p>Simulation environment concept with camera frustum, weather chips, and UAV tracks.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="section-pad publications">
+      <div class="section-heading">
+        <p class="eyebrow">Publications and outputs</p>
+        <h2>Selected papers and datasets</h2>
+      </div>
+      <div class="publication-card">
+        <h3>DrIFT: Autonomous Drone Dataset with Integrated Real and Synthetic Data</h3>
+        <p>Accepted to IEEE/CVF WACV 2025. Add the final citation, PDF link, code, and dataset links here.</p>
+        <div class="tag-row">
+          <span>Dataset</span><span>Real + synthetic</span><span>UAV perception</span>
+        </div>
+      </div>
+      <div class="publication-card muted-card">
+        <h3>CycleGAN-assisted UAV payload detection</h3>
+        <p>Add manuscript status, preprint link, demo video, and repository link when available.</p>
+        <div class="tag-row">
+          <span>Domain adaptation</span><span>Payload classification</span><span>Deep learning</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-pad contact">
+      <p class="eyebrow">Contact</p>
+      <h2>Interested in UAV perception, tracking, or AI/signal-processing collaboration?</h2>
+      <p>Replace the placeholder email below with your preferred public contact email.</p>
+      <div class="contact-links">
+        <a class="button primary" href="mailto:your-email@example.com">Email me</a>
+        <a class="button ghost" href="https://github.com/azadhamid" target="_blank" rel="noreferrer">GitHub profile</a>
+        <a class="button ghost" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Hamid Azad</span>
+    <span>Built for GitHub Pages</span>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
